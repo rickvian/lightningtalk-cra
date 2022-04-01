@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "./components/Button";
 import Counter from "./components/Counter";
 
-//wrong example not using use state
+// wrong example, when not using use state
 
 let count = 1; // defined count outside react component
 
@@ -10,14 +10,12 @@ setTimeout(() => {
   alert(`current count value: ${count}`);
 }, 2000);
 
-// React component:
+//! React component:
 const useStatePageWrong1 = () => {
   const increment = () => {
     console.log("increment() called");
     count++;
   };
-
-  console.log("i will log when re-renders");
 
   return (
     <>
