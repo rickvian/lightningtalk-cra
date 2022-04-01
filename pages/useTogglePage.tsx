@@ -22,10 +22,12 @@ const useNoUnrealisticExpectation = () => {
   const [isCheap, toggleIsCheap] = useToggle();
   const [isFast, toggleIsFast] = useToggle();
 
+  // "halu" means "unrealistic"
   const isHalu = isGood && isCheap && isFast; // derived state
 
   useEffect(() => {
     if (isHalu) {
+      console.log("halu detected");
       switch (Math.floor(Math.random() * 3) + 1) {
         case 1:
           toggleIsGood();

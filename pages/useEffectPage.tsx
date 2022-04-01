@@ -6,13 +6,13 @@ const useEffectPage = () => {
   const [countSlap, setCountSlap] = useState(0);
 
   //? intro: run function when mount and unmounted
-  useEffect(() => {
-    console.log("Welcome to the Stand Up Comedy");
+  // useEffect(() => {
+  //   console.log("Welcome to the Stand Up Comedy");
 
-    return () => {
-      alert("Component unmounted");
-    }; // called when unmounted
-  }, []); // empty array = called onLoad only
+  //   return () => {
+  //     alert("Component unmounted");
+  //   }; // called when unmounted
+  // }, []); // empty array = called onLoad only
 
   //? this hook is reacting to number of jokes:
   // use effect will always run 1 time on load, even with dependency
