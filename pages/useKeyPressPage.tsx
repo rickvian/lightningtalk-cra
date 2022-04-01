@@ -35,8 +35,8 @@ const useKeyPressPage = () => {
   const robotPress = useKeyPress("e");
   const foxPress = useKeyPress("r");
   return (
-    <div>
-      <div>h, s, r, f</div>
+    <div className="text-5xl">
+      <div>q w e r</div>
       <div style={{ height: "30px" }}>
         {happyPress && "😊"}
         {sadPress && "😢"}
