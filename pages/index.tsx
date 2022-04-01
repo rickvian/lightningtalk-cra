@@ -27,19 +27,19 @@ const Home: Next = () => {
     <>
       <div className="flex flex-col">
         <h2 className="text-white mb-3">Basic Hooks</h2>
-        <div className="grid grid-cols-4 divide-x text-white rounded-md mb-3">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md mb-3">
           <List pages={pagesBasic1} />
         </div>
-        <div className="grid grid-cols-4 divide-x text-white rounded-md mb-3">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md mb-3">
           <List pages={pagesBasic2} />
         </div>
 
-        <div className="grid grid-cols-4 divide-x text-white rounded-md">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md">
           <List pages={pagesMemo} />
         </div>
 
         <h2 className="text-white mb-3">Custom Hooks</h2>
-        <div className="grid grid-cols-4 divide-x text-white rounded-md">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md">
           <List pages={pagesCustom} />
         </div>
       </div>

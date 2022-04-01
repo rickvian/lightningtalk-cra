@@ -4,6 +4,8 @@ import Counter from "./components/Counter";
 
 // wrong example, when not using use state
 
+// go to Profiler >  Highlight updates when components render
+
 let count = 1; // defined count outside react component
 
 setTimeout(() => {

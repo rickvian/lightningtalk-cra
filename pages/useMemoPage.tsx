@@ -8,7 +8,7 @@ const useMemoPage = () => {
   const [countJokes, setCountJokes] = useState(0);
   const [countLightBulb, setCountLightBulB] = useState(0);
 
-  const incrementLightBuilb = () => {
+  const incrementLightBulb = () => {
     setCountLightBulB((prev) => prev + 1);
   };
 
@@ -30,7 +30,7 @@ const useMemoPage = () => {
   const countSlap = heavyComputingCountSlap();
 
   // with memo
-  // const countSlap = useMemo(() => heavyComputingCountSlap(), [countJokes]);
+  // const countSlap = useMemo(() => heavyComputingCountSlap(), [countJokes]); //only re-run when countJokes changed
 
   return (
     <div className="text-center">
@@ -40,8 +40,10 @@ const useMemoPage = () => {
         <div>Total Jokes 🤡: {countJokes}</div>
         <div>times you got slap 👏: {countSlap}</div>
       </div>
+
+      {/* Irrelevant with jokes and slap, but cause re-render */}
       <div className="text-center">
-        <Button onClick={incrementLightBuilb}>Add Light Bulb</Button>
+        <Button onClick={incrementLightBulb}>Add Light Bulb</Button>
         <div>Total Lightbulb 💡: {countLightBulb}</div>
       </div>
     </div>

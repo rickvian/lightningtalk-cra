@@ -7,7 +7,6 @@ const useStatePage = () => {
 
   const increment = () => {
     console.log("increment 1");
-
     setCount((prevCount) => prevCount + 1); // correct
   };
 
@@ -22,7 +21,6 @@ const useStatePage = () => {
     <>
       <div className="grid grid-rows-4 grid-flow-col gap-4">
         <Counter>{count}</Counter>
-
         <Button onClick={increment}>Counter add 1</Button>
         <Button onClick={incrementByFive}>Counter add 5</Button>
       </div>

@@ -6,7 +6,7 @@ const useRefPage = () => {
   const inputBRef = useRef(null);
 
   const focusOnA = () => {
-    inputARef.current.focus();
+    inputARef.current.focus(); // HTMLInputElement.focus()
   };
 
   const focusOnB = () => {
@@ -14,7 +14,7 @@ const useRefPage = () => {
   };
 
   const insertValueUncontrolled = () => {
-    inputARef.current.value = "Assigned to A";
+    inputARef.current.value = "Assigned to A"; // HTMLInputElement.value
     inputBRef.current.value = "Assigned to B";
   };
 

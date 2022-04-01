@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useCallback, useState } from "react";
 import Toggle from "./components/Toggle";
 
-// Hook
+//? Another basic custom Hook
 // Parameter is the boolean, with default "false" value
 const useToggle = (initialState = false): [boolean, () => void] => {
   // Initialize the state
@@ -16,7 +16,7 @@ const useToggle = (initialState = false): [boolean, () => void] => {
   return [state, toggle];
 };
 
-// custom hooks inside custom hooks
+//? Custom hooks inside Custom hooks
 const useNoUnrealisticExpectation = () => {
   const [isGood, toggleIsGood] = useToggle();
   const [isCheap, toggleIsCheap] = useToggle();
@@ -45,11 +45,12 @@ const useNoUnrealisticExpectation = () => {
   return { isGood, isCheap, isFast, toggleIsGood, toggleIsCheap, toggleIsFast };
 };
 
+//? Page component:
 const useTogglePage = () => {
-  const [isMuted, toggleIsMuted] = useToggle(); // returns array, can
+  const [isMuted, toggleIsMuted] = useToggle(); // hook returns array, can
 
   const { isGood, isCheap, isFast, toggleIsGood, toggleIsCheap, toggleIsFast } =
-    useNoUnrealisticExpectation(); // returns object, can oso
+    useNoUnrealisticExpectation(); // hook returns object, can oso
 
   return (
     <div>

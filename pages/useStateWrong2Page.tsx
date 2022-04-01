@@ -15,7 +15,7 @@ const useStatePageWrong2Page = () => {
   const incrementByFive = () => {
     console.log("incrementByFive called()");
     for (let i = 0; i < 5; i++) {
-      setCount(count + 1); // this will not work as expeced due to React `batching` set states (for performance reason)
+      setCount(count + 1); // imagine what will happen here
     }
   };
 
