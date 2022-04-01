@@ -4,11 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
-const pagesBasic1 = [
-  "useStatePageWrong1",
-  "useStatePageWrong2",
-  "useStatePageCorrect",
-];
+const pagesBasic1 = ["useStatePageWrong1", "useStatePageWrong2"];
 const pagesBasic2 = ["useStatePageCorrect", "useEffectPage"];
 const pagesMemo = ["useMemoPage", "useCallbackPage"];
 
@@ -33,20 +29,20 @@ const Home: NextPage = () => {
     <>
       <div className="flex flex-col">
         <h2 className="text-white mb-3">Basic Hooks</h2>
-        <div className="grid grid-cols-4 divide-x text-white rounded-md mb-3">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md mb-3">
           <PagesList pages={pagesBasic1} />
         </div>
-        <div className="grid grid-cols-4 divide-x text-white rounded-md mb-3">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md mb-3">
           <PagesList pages={pagesBasic2} />
         </div>
 
         <h2 className="text-white mb-3">Custom Hooks</h2>
-        <div className="grid grid-cols-4 divide-x text-white rounded-md">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md">
           <PagesList pages={pagesMemo} />
         </div>
 
         <h2 className="text-white mb-3">Custom Hooks</h2>
-        <div className="grid grid-cols-4 divide-x text-white rounded-md">
+        <div className="grid grid-cols-2 divide-x text-white rounded-md">
           <PagesList pages={pagesCustom} />
         </div>
       </div>

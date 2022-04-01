@@ -6,7 +6,7 @@ let count = 1;
 
 setTimeout(() => {
   console.log("count:", count);
-}, 3000);
+}, 5000);
 
 const useStatePage = () => {
   // const [count, setCount] = useState(0);
