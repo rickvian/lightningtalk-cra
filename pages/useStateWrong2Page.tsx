@@ -26,7 +26,10 @@ const useStatePageWrong2Page = () => {
 
         <Button onClick={increment}>Counter add 1</Button>
         <Button onClick={incrementByFive}>Counter add 5</Button>
-        <div className="p-3 text-center">Go to Home page, and come back</div>
+        <div className="p-3 text-center">
+          <div>Go to Home page, and come back</div>
+          <div>your state will be reset</div>
+        </div>
       </div>
     </>
   );
